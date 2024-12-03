@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlenfolge Eingabe</title>
+    <script>
+        function checkCode() {
+            const correctCode = "12345"; // Die richtige Zahlenfolge
+            const userInput = document.getElementById("codeInput").value;
+
+            if (userInput === correctCode) {
+                window.location.href = "congrats.html"; // Weiterleitung zur neuen Seite
+            } else {
+                alert("Falsche Zahlenfolge! Bitte erneut versuchen.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Gib die Zahlenfolge ein</h1>
+    <p>Bitte gib die korrekte Zahlenfolge ein, um fortzufahren:</p>
+    <input type="text" id="codeInput" placeholder="Zahlenfolge">
+    <button onclick="checkCode()">Weiter</button>
+</body>
+</html>
